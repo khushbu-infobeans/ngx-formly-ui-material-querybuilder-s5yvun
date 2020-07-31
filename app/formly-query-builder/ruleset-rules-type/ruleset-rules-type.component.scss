@@ -1,0 +1,37 @@
+.field {
+  position: relative;
+  display: flex;
+  align-items: start;
+  padding: 1rem 1rem 0 1rem;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+  border: 1px solid rgba(0, 0, 0, .2);
+
+  formly-field {
+    flex: 1;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: -.5rem;
+    right: 100%;
+    border-color: #CCC;
+    border-style: solid;
+    width: 9px;
+    height: calc(50% + .5rem);
+    border-width: 0 0 2px 2px;
+  }
+
+  &::after {
+    top: 50%;
+    border-width: 0 0 0 2px;
+  }
+
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+}

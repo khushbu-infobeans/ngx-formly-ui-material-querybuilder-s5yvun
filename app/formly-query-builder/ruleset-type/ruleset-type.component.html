@@ -1,0 +1,15 @@
+<header class="header">
+  <formly-field [field]="field.fieldGroup[0]"></formly-field>
+  <div class="controls">
+    <button type="button" mat-icon-button color="primary" (click)="addRule()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button type="button" mat-icon-button color="primary" (click)="addRuleset()">
+      <mat-icon>add_circle_outline</mat-icon>
+    </button>
+  </div>
+</header>
+
+<section class="rules">
+  <formly-field [field]="field.fieldGroup[1]"></formly-field>
+</section>

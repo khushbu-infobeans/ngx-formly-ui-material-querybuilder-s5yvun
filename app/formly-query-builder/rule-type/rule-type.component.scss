@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  margin: 0 -.5rem;
+}
+
+.col {
+  flex: 1;
+  max-width: calc(33% - 1rem);
+  margin: 0 .5rem;
+}
